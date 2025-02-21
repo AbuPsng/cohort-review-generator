@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div id="btn-toggle"></div>
+      <section>
+        <div id="reviews-generator-container">
+          <h1>Tell us your experience</h1>
+          <form id="form">
+            <div>
+              <label for="user-review">review please 🤐 </label>
+              <textarea
+                type="text"
+                id="user-review"
+                class="form-inputs"
+                placeholder="share your experience"
+              >
+              </textarea>
+            </div>
+
+            <div id="stars-container">
+              <i id="star" class="fa fa-star star"></i>
+              <i id="star" class="fa fa-star star"></i>
+              <i id="star" class="fa fa-star star"></i>
+              <i id="star" class="fa fa-star star"></i>
+              <i id="star" class="fa fa-star star"></i>
+            </div>
+
+            <div>
+              <label for="username">can i know your name 😁?</label>
+              <input
+                type="text"
+                id="username"
+                class="form-inputs"
+                placeholder="your name please"
+              />
+            </div>
+            <button id="btn-submit" type="submit">Submit</button>
+          </form>
+        </div>
+        <div id="reviews-container">
+          <h1>What user says about us</h1>
+          <div id="filter-holders" class="btn-holders">
+            <button id="good">Above or equal to 4</button>
+            <button id="bad">Below or equal to 3</button>
+            <button id="named">Named User</button>
+            <button id="anonymous">Anonymous user</button>
+          </div>
+          <div id="sort-holders" class="btn-holders">
+            <button id="good-bad">Good - Bad</button>
+            <button id="bad-good">Bad - Good</button>
+            <button id="oldest-newest">Oldest - Newest</button>
+            <button id="newest-oldest">Newest - Oldest</button>
+          </div>
+          <div id="sort-filter-container">
+            <button id="btn-default">Reset</button>
+            <button id="btn-filter">Filter</button>
+            <button id="btn-sort">Sort</button>
+          </div>
+          <div id="reviews"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
